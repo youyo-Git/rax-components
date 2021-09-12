@@ -1,0 +1,66 @@
+.goldanimate {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color:red;
+    background: url(../../public/img/money.jpg) center no-repeat;
+    display: block;
+    animation: run-right-right 1.5s 0s 1 linear, run-right-bottom 1.5s 0s 1 cubic-bezier(.09,.46,.49,.88), outandin 0.5s 1.5s 1 linear;
+    animation-fill-mode: forwards;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+
+.ball{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 40px;
+    z-index: 10;
+    left: 40px;
+    background: greenyellow;
+  }
+  
+
+@keyframes run-right-bottom {
+    0% {
+        top:0px;
+    }
+
+    100% {
+        top:200px;
+    }
+}
+/* 向上右的动画初始及结尾值 */
+@keyframes run-right-right {
+    0% {
+        left: 0px;
+        transform: rotateY(0);
+    }
+
+    100% {
+        left: 200px;
+        transform: rotateY(900deg);
+    }
+}
+
+@keyframes outandin {
+    0% {
+       opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
