@@ -2,7 +2,7 @@ import { createElement, Component, createRef,render} from 'rax';
 import Bubble from '@/components/Bubble'
 import styles from './index.module.css'
 
-class Bubblewrap extends Component {
+class BubbleWrap extends Component {
     state = {  }
     wrap = createRef()
     content = ['剑豪1--哈撒给','剑豪2--哦里牙痛','北斗神拳--哦嘛系哇木屋新得一路','佩恩--一袋米扛几楼']
@@ -27,4 +27,4 @@ class Bubblewrap extends Component {
     }
 }
  
-export default Bubblewrap;
+export default BubbleWrap;
