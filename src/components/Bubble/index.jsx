@@ -12,13 +12,7 @@ class Bubble extends Component {
   }
    
   }
-  content = [
-    '鸣谢生命有你参与，笑纳我的邀请',
-    '青春兵荒马乱，我们潦草地离散',
-    '我对你付出的青春 这么多年',
-    '我的心事，蒸发成云，再下场雨却舍不得淋湿你',
-  ];
-  
+
   bubble = createRef();
 
   componentDidMount(){
